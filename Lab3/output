@@ -1,0 +1,154 @@
+
+import  is a Keyword
+
+Random is an identifier
+
+; is a operator
+
+
+
+class  is a Keyword
+
+Game is an identifier
+ 
+{ is a operator
+
+  // Haxe applications have a static entry point called main is a comment
+ 
+ static  is a Keyword
+
+function is an identifier
+
+ main  is a Keyword
+
+( is a operator
+
+) is a operator
+ 
+{ is a operator
+
+
+	var  is a Keyword
+
+sid is an identifier
+ 
+= is a operator
+ 
+-11 is an integer.
+
+; is a operator
+
+
+	var  is a Keyword
+
+hideuos is an identifier
+ 
+= is a operator
+ 
++23.45E34 is an integer.
+
+; is a operator
+
+
+	var  is a Keyword
+
+pide is an identifier
+ 
+= is a operator
+ 
+-1.21E34 is an integer.
+
+; is a operator
+
+
+	var  is a Keyword
+
+Harish is an identifier
+ 
+= is a operator
+ 
+Random is an identifier
+
+. is a operator
+
+int is an identifier
+
+( is a operator
+
+1 is an integer.
+
+, is a operator
+ 
+100 is an integer.
+
+) is a operator
+
+; is a operator
+
+
+	var  is a Keyword
+
+sudhamsh is an identifier
+  
+= is a operator
+ 
+Random is an identifier
+
+. is a operator
+
+int is an identifier
+
+( is a operator
+
+1 is an integer.
+
+, is a operator
+ 
+100 is an integer.
+
+) is a operator
+
+; is a operator
+
+
+	if  is a Keyword
+
+( is a operator
+
+sudhamsh is an identifier
+ 
+> is a operator
+ 
+Harish is an identifier
+
+) is a operator
+ 
+trace is an identifier
+
+( is a operator
+
+"Sudhamsh Wins!" is a string literal
+
+) is a operator
+
+; is a operator
+
+
+	else  is a Keyword
+
+trace is an identifier
+
+( is a operator
+
+"Harish Wins!" is a string literal
+
+) is a operator
+
+; is a operator
+
+  
+} is a operator
+
+
+} is a operator
+
