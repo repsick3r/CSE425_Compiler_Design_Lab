@@ -3,5 +3,7 @@ This lab is to just to checkout the intermediate steps and files being produced 
 -----------------
 
 <div align="center">
-    <img src=".Lab1/C_Steps.png" width="300">
+    <img src="C_Steps.png" width="600">
 </div>
+
+-----------------
