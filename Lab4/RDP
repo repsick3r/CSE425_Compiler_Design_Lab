@@ -1,1 +1,0 @@
-g++ recDes.cpp -o recDes && ./recDes
