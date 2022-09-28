@@ -7,7 +7,7 @@ sudo apt-get install bison flex
 
 - Input (Game.hx)
 <div align="center">
-    <img src="input.png" width="800">
+    <img src="input.png" width="800" height="300">
 </div>
 
 <br>
