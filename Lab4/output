@@ -1,0 +1,324 @@
+6 TestCases
+Parse Trees are printed whenever we are able to accept the input
+**********************************************************************************************
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+F checking for this rule : F -> (E)
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+) matching with : )
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+
+E
++--- T
+|    +--- F
+|    |    +--- id
+|    +--- T'
+|        +--- *
+|        +--- F
+|        |    +--- (
+|        |    +--- E
+|        |    |    +--- T
+|        |    |    |    +--- F
+|        |    |    |    |    +--- id
+|        |    |    |    +--- T'
+|        |    |    |        +--- ε
+|        |    |    +--- E'
+|        |    |        +--- +
+|        |    |        +--- T
+|        |    |        |    +--- F
+|        |    |        |    |    +--- id
+|        |    |        |    +--- T'
+|        |    |        |        +--- ε
+|        |    |        +--- E'
+|        |    |            +--- ε
+|        |    +--- )
+|        +--- T'
+|            +--- ε
++--- E'
+    +--- +
+    +--- T
+    |    +--- F
+    |    |    +--- id
+    |    +--- T'
+    |        +--- ε
+    +--- E'
+        +--- ε
+
+input  : id*(id+id)+id
+output : id*(idε+idεε)ε+idεε
+
+T all options exhausted!
+E' checking for this rule : E' -> ε
+T all options exhausted!
+E' checking for this rule : E' -> ε
+) matching with : +
+T all options exhausted!
+E all options exhausted!
+F checking for this rule : F -> id
+F all options exhausted!
+T' checking for this rule : T' -> ε
+E' all options exhausted!
+T all options exhausted!
+E all options exhausted!
+**********************************************************************************************
+**********************************************************************************************
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+
+E
++--- T
+|    +--- F
+|    |    +--- id
+|    +--- T'
+|        +--- ε
++--- E'
+    +--- +
+    +--- T
+    |    +--- F
+    |    |    +--- id
+    |    +--- T'
+    |        +--- *
+    |        +--- F
+    |        |    +--- id
+    |        +--- T'
+    |            +--- ε
+    +--- E'
+        +--- ε
+
+input  : id+id*id
+output : idε+id*idεε
+
+T' checking for this rule : T' -> ε
+E' all options exhausted!
+T all options exhausted!
+E' checking for this rule : E' -> ε
+T all options exhausted!
+E all options exhausted!
+**********************************************************************************************
+**********************************************************************************************
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+F checking for this rule : F -> (E)
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+) matching with : )
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+
+E
++--- T
+|    +--- F
+|    |    +--- id
+|    +--- T'
+|        +--- *
+|        +--- F
+|        |    +--- (
+|        |    +--- E
+|        |    |    +--- T
+|        |    |    |    +--- F
+|        |    |    |    |    +--- id
+|        |    |    |    +--- T'
+|        |    |    |        +--- ε
+|        |    |    +--- E'
+|        |    |        +--- +
+|        |    |        +--- T
+|        |    |        |    +--- F
+|        |    |        |    |    +--- id
+|        |    |        |    +--- T'
+|        |    |        |        +--- ε
+|        |    |        +--- E'
+|        |    |            +--- ε
+|        |    +--- )
+|        +--- T'
+|            +--- ε
++--- E'
+    +--- +
+    +--- T
+    |    +--- F
+    |    |    +--- id
+    |    +--- T'
+    |        +--- *
+    |        +--- F
+    |        |    +--- id
+    |        +--- T'
+    |            +--- ε
+    +--- E'
+        +--- ε
+
+input  : id*(id+id)+id*id
+output : id*(idε+idεε)ε+id*idεε
+
+T' checking for this rule : T' -> ε
+E' all options exhausted!
+T all options exhausted!
+E' checking for this rule : E' -> ε
+T all options exhausted!
+E' checking for this rule : E' -> ε
+) matching with : +
+T all options exhausted!
+E all options exhausted!
+F checking for this rule : F -> id
+F all options exhausted!
+T' checking for this rule : T' -> ε
+E' all options exhausted!
+T all options exhausted!
+E all options exhausted!
+**********************************************************************************************
+**********************************************************************************************
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+F all options exhausted!
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+T all options exhausted!
+E all options exhausted!
+This input is not accepted by the grammar : id*)+
+**********************************************************************************************
+**********************************************************************************************
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+E checking for this rule : E -> TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+T checking for this rule : T -> FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+F checking for this rule : F -> (E)
+F checking for this rule : F -> id
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+) matching with : )
+T' checking for this rule : T' -> *FT'
+T' checking for this rule : T' -> ε
+E' checking for this rule : E' -> +TE'
+E' checking for this rule : E' -> ε
+
+E
++--- T
+|    +--- F
+|    |    +--- (
+|    |    +--- E
+|    |    |    +--- T
+|    |    |    |    +--- F
+|    |    |    |    |    +--- id
+|    |    |    |    +--- T'
+|    |    |    |        +--- ε
+|    |    |    +--- E'
+|    |    |        +--- +
+|    |    |        +--- T
+|    |    |        |    +--- F
+|    |    |        |    |    +--- id
+|    |    |        |    +--- T'
+|    |    |        |        +--- *
+|    |    |        |        +--- F
+|    |    |        |        |    +--- id
+|    |    |        |        +--- T'
+|    |    |        |            +--- ε
+|    |    |        +--- E'
+|    |    |            +--- ε
+|    |    +--- )
+|    +--- T'
+|        +--- ε
++--- E'
+    +--- ε
+
+input  : (id+id*id)
+output : (idε+id*idεε)εε
+
+T' checking for this rule : T' -> ε
+E' all options exhausted!
+T all options exhausted!
+E' checking for this rule : E' -> ε
+) matching with : +
+T all options exhausted!
+E all options exhausted!
+F checking for this rule : F -> id
+F all options exhausted!
+T all options exhausted!
+E all options exhausted!
+**********************************************************************************************
+**********************************************************************************************
+E checking for this rule : E -> TE'
+E all options exhausted!
+This input is not accepted by the grammar : 
+**********************************************************************************************
