@@ -1,0 +1,100 @@
+4 TestCases
+Steps are printed whenever we are able to accept the input
+**********************************************************************************************
+--------------------------------------------------------------------------------------------------------------------
+Matched                                   Stack                Input                Action                   
+--------------------------------------------------------------------------------------------------------------------
+                                             E$            id+id*id$                output E --> TE'         
+                                           TE'$            id+id*id$                output T --> FT'         
+                                         FT'E'$            id+id*id$                output F --> id          
+                                        idT'E'$            id+id*id$                match id                 
+id                                        T'E'$              +id*id$                output T' --> ε         
+id                                          E'$              +id*id$                output E' --> +TE'       
+id                                        +TE'$              +id*id$                match +                  
+id+                                        TE'$               id*id$                output T --> FT'         
+id+                                      FT'E'$               id*id$                output F --> id          
+id+                                     idT'E'$               id*id$                match id                 
+id+id                                     T'E'$                 *id$                output T' --> *FT'       
+id+id                                   *FT'E'$                 *id$                match *                  
+id+id*                                   FT'E'$                  id$                output F --> id          
+id+id*                                  idT'E'$                  id$                match id                 
+id+id*id                                  T'E'$                    $                output T' --> ε         
+id+id*id                                    E'$                    $                output E' --> ε         
+id+id*id                                      $                    $                Success!                 
+
+Input   : id+id*id
+Matched : id+id*id
+**********************************************************************************************
+**********************************************************************************************
+--------------------------------------------------------------------------------------------------------------------
+Matched                                   Stack                Input                Action                   
+--------------------------------------------------------------------------------------------------------------------
+                                             E$       id*(id+id)+id$                output E --> TE'         
+                                           TE'$       id*(id+id)+id$                output T --> FT'         
+                                         FT'E'$       id*(id+id)+id$                output F --> id          
+                                        idT'E'$       id*(id+id)+id$                match id                 
+id                                        T'E'$         *(id+id)+id$                output T' --> *FT'       
+id                                      *FT'E'$         *(id+id)+id$                match *                  
+id*                                      FT'E'$          (id+id)+id$                output F --> (E)         
+id*                                    (E)T'E'$          (id+id)+id$                match (                  
+id*(                                    E)T'E'$           id+id)+id$                output E --> TE'         
+id*(                                  TE')T'E'$           id+id)+id$                output T --> FT'         
+id*(                                FT'E')T'E'$           id+id)+id$                output F --> id          
+id*(                               idT'E')T'E'$           id+id)+id$                match id                 
+id*(id                               T'E')T'E'$             +id)+id$                output T' --> ε         
+id*(id                                 E')T'E'$             +id)+id$                output E' --> +TE'       
+id*(id                               +TE')T'E'$             +id)+id$                match +                  
+id*(id+                               TE')T'E'$              id)+id$                output T --> FT'         
+id*(id+                             FT'E')T'E'$              id)+id$                output F --> id          
+id*(id+                            idT'E')T'E'$              id)+id$                match id                 
+id*(id+id                            T'E')T'E'$                )+id$                output T' --> ε         
+id*(id+id                              E')T'E'$                )+id$                output E' --> ε         
+id*(id+id                                )T'E'$                )+id$                match )                  
+id*(id+id)                                T'E'$                 +id$                output T' --> ε         
+id*(id+id)                                  E'$                 +id$                output E' --> +TE'       
+id*(id+id)                                +TE'$                 +id$                match +                  
+id*(id+id)+                                TE'$                  id$                output T --> FT'         
+id*(id+id)+                              FT'E'$                  id$                output F --> id          
+id*(id+id)+                             idT'E'$                  id$                match id                 
+id*(id+id)+id                             T'E'$                    $                output T' --> ε         
+id*(id+id)+id                               E'$                    $                output E' --> ε         
+id*(id+id)+id                                 $                    $                Success!                 
+
+Input   : id*(id+id)+id
+Matched : id*(id+id)+id
+**********************************************************************************************
+**********************************************************************************************
+--------------------------------------------------------------------------------------------------------------------
+Matched                                   Stack                Input                Action                   
+--------------------------------------------------------------------------------------------------------------------
+                                             E$          id*(id+id)$                output E --> TE'         
+                                           TE'$          id*(id+id)$                output T --> FT'         
+                                         FT'E'$          id*(id+id)$                output F --> id          
+                                        idT'E'$          id*(id+id)$                match id                 
+id                                        T'E'$            *(id+id)$                output T' --> *FT'       
+id                                      *FT'E'$            *(id+id)$                match *                  
+id*                                      FT'E'$             (id+id)$                output F --> (E)         
+id*                                    (E)T'E'$             (id+id)$                match (                  
+id*(                                    E)T'E'$              id+id)$                output E --> TE'         
+id*(                                  TE')T'E'$              id+id)$                output T --> FT'         
+id*(                                FT'E')T'E'$              id+id)$                output F --> id          
+id*(                               idT'E')T'E'$              id+id)$                match id                 
+id*(id                               T'E')T'E'$                +id)$                output T' --> ε         
+id*(id                                 E')T'E'$                +id)$                output E' --> +TE'       
+id*(id                               +TE')T'E'$                +id)$                match +                  
+id*(id+                               TE')T'E'$                 id)$                output T --> FT'         
+id*(id+                             FT'E')T'E'$                 id)$                output F --> id          
+id*(id+                            idT'E')T'E'$                 id)$                match id                 
+id*(id+id                            T'E')T'E'$                   )$                output T' --> ε         
+id*(id+id                              E')T'E'$                   )$                output E' --> ε         
+id*(id+id                                )T'E'$                   )$                match )                  
+id*(id+id)                                T'E'$                    $                output T' --> ε         
+id*(id+id)                                  E'$                    $                output E' --> ε         
+id*(id+id)                                    $                    $                Success!                 
+
+Input   : id*(id+id)
+Matched : id*(id+id)
+**********************************************************************************************
+**********************************************************************************************
+This input is not accepted by the grammar : id(
+**********************************************************************************************
