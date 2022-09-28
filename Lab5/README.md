@@ -20,7 +20,7 @@ g++ predictiveParser.cpp -o pp
 
 - Output
 <div align="center">
-    <img src="output.png" width="1000" height="600">
+    <img src="output.png" width="900" height="450">
 </div>
 
 <br>
