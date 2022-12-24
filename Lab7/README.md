@@ -10,3 +10,5 @@ cc y.tab.c lex.yy.c
 ```
 
 <br>
+
+Ignore the error messages, input the size of matrix in the command line when prompted.
