@@ -161,7 +161,7 @@ void print_current(stack<int> st, stack<char> syt, string s, int ind) {
     str += " ";
     st.pop();
   }
-  cout << str << string(20 - str.size(), ' ');
+  cout << escape << color6 << str << string(20 - str.size(), ' ') << escape << aum;
 
   //SYMBOL TABLE
   str = "";
@@ -174,7 +174,7 @@ void print_current(stack<int> st, stack<char> syt, string s, int ind) {
     syt.pop();
   }
   reverse(str.begin(), str.end());
-  cout << str << string(10 - str.size(), ' ');
+  cout << escape << color9 << str << string(10 - str.size(), ' ') << escape << aum;
   str = "";
   for (ind; ind < s.size(); ind++) {
     if (s[ind] == 'i')str += "id";
@@ -182,7 +182,7 @@ void print_current(stack<int> st, stack<char> syt, string s, int ind) {
       str += s[ind];
     }
   }
-  cout << string(20 - str.size(), ' ') << str << string(20, ' ');
+  cout << escape << color8 << string(20 - str.size(), ' ') << str << string(20, ' ') << escape << aum;
 }
 
 
@@ -202,7 +202,7 @@ bool canonical_lr_parser(unordered_map<int, pair<char, string>> &grammar, string
       state_table.push(stoi(act));
       symbol_table.push(s[ind]);
       ind++;
-      cout << "shift to " << act << endl;
+      cout << escape << color7 << "shift to " << act << escape << aum << endl;
     }
 
     else if (act[0] == 'r') {
@@ -218,11 +218,11 @@ bool canonical_lr_parser(unordered_map<int, pair<char, string>> &grammar, string
       if (!_goto.count({t, red.first}))return false;
       state_table.push(_goto[ {t, red.first}]);
       symbol_table.push(red.first);
-      cout << "reduce by " << red.first << " --> " << red.second << endl;
+      cout << escape << color7 << "reduce by " << red.first << " --> " << red.second << escape << aum << endl;
     }
 
     else if (act == "accept") {
-      cout << "Accepted" << endl;
+      cout << escape << color5 << "Accepted" << escape << aum << endl;
       return true;
     }
 
@@ -256,19 +256,19 @@ int main() {
 
   while (getline(myfile, s)) {
     s.erase(remove(s.begin(), s.end(), ' '), s.end());
-    cout << "--------------------------------------------------------------------------------------------------------------------" << "\n";    
-    cout << "--------------------------------------------------------------------------------------------------------------------" << "\n";    
+    cout << escape << color12 << "--------------------------------------------------------------------------------------------------------------------" << escape << aum << "\n";    
+    cout << escape << color12 << "--------------------------------------------------------------------------------------------------------------------" << escape << aum << "\n";    
     cout << "\n";
-    cout << "Given Input : " << s << endl << endl;
+    cout << escape << color11 << "Given Input : " << s << endl << endl;
     s.erase(remove(s.begin(), s.end(), 'd'), s.end());
     s.push_back('$');
     int ind = 0;
-    cout << string(90, '-') << endl;
-    cout << "STATE               SYMBOL                  INPUT                      ACTION" << endl;
-    cout << string(90, '-') << endl;
+    cout << escape << color12 << string(90, '-') << endl;
+    cout << escape << color11 << "STATE               SYMBOL                  INPUT                      ACTION" << endl;
+    cout << escape << color12 << string(90, '-') << endl;
     bool check = canonical_lr_parser(grammar, s, ind);
-    if (check == true)cout << endl << "Input is validated!" << endl;
-    else cout << "Error" << endl << endl << "Input can't be validated!" << endl;
+    if (check == true)cout << endl << escape << color11 << "Input is validated!" << escape << aum << endl;
+    else cout << escape << color5 << "Error" << escape << aum << endl << endl << escape << color11 << "Input can't be validated!" << escape << aum << endl;
 
     // cout << escape << color12 << string(80, '~') << endl << endl;
     // cout << escape << color12<< "--------------------------------------------------------------------------------------------------------------------" << escape << aum << "\n";        
