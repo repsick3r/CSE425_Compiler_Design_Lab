@@ -1,28 +1,12 @@
-This lab involves implementing a canonical LR parser
-
-- Grammar
-<div align="center">
-    <img src="grammar.png" width="200" height="100">
-</div>
-
-- Input
-<div align="center">
-    <img src="input.png" width="200" height="150">
-</div>
+This lab involves implementing a 3-dimensional array
 
 <br>
 
-We use a stack implementation
 ```
-g++ canonicalLRParser.cpp -o clp
-./clp input.txt
+lex arr_dec.l
+yacc -d arr_dec.y
+cc y.tab.c lex.yy.c
+./a.out
 ```
-
-- Output
-<div align="center">
-    <img src="output.png" width="900" height="450">
-</div>
 
 <br>
-
-Use the color_canonicalLRParser.cpp if your terminal supports [term256](https://github.com/gawin/bash-colors-256) colours.
