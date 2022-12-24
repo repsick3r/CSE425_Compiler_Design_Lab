@@ -1,4 +1,4 @@
-This lab involves implementing a predictive top down parser
+This lab involves implementing a canonical LR parser
 
 - Grammar
 <div align="center">
@@ -14,8 +14,8 @@ This lab involves implementing a predictive top down parser
 
 We use a stack implementation
 ```
-g++ predictiveParser.cpp -o pp
-./pp input.txt
+g++ canonicalLRParser.cpp -o clp
+./clp input.txt
 ```
 
 - Output
@@ -25,4 +25,4 @@ g++ predictiveParser.cpp -o pp
 
 <br>
 
-Use the color_predictiveParser.cpp if your terminal supports [term256](https://github.com/gawin/bash-colors-256) colours.
+Use the color_canonicalLRParser.cpp if your terminal supports [term256](https://github.com/gawin/bash-colors-256) colours.
