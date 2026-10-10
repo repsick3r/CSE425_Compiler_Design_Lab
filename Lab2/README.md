@@ -1,3 +1,5 @@
+# Lab 2 · Lexical analyser in C++
+
 This lab aims to generate tokens for lexemes producing keywords, identifiers, numbers etc...
 
 - Input (Game.hx)
@@ -18,3 +20,7 @@ chmod 777 Lexi
 <div align="center">
     <img src="output.png" width="800" height="300">
 </div>
+
+<br>
+
+[← Lab 1](../Lab1/README.md) · [All labs](../) · [Lab 3 →](../Lab3/README.md)

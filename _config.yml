@@ -1,0 +1,21 @@
+theme: jekyll-theme-primer
+
+plugins:
+  - jekyll-relative-links
+
+title: CSE425 Compiler Design Lab
+description: Lab work for the compiler design course at IIT (BHU), from gcc's intermediate files up to a canonical LR parser.
+baseurl: /CSE425_Compiler_Design_Lab
+
+# The repo README stays the GitHub view; index.md is the site homepage.
+# Compiled binaries and build outputs don't need to be published.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - Lab1/first-exec
+  - Lab1/test.o
+  - Lab2/Lexi
+  - Lab3/main
+  - Lab4/recDes

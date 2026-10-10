@@ -1,3 +1,5 @@
+# Lab 1 · Phases of compiling a C program
+
 This lab is to just to checkout the intermediate steps and files being produced during compilation of a sample C program
 
 -----------------
@@ -14,3 +16,7 @@ gcc -Wall --verbose --save-temps -o first-exec test.c
 chmod 777 first-exec
 ./first-exec 
 ```
+
+<br>
+
+[All labs](../) · [Lab 2 →](../Lab2/README.md)

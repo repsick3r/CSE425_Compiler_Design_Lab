@@ -1,3 +1,5 @@
+# Lab 5 · Predictive parser
+
 This lab involves implementing a predictive top down parser
 
 - Grammar
@@ -26,3 +28,7 @@ g++ predictiveParser.cpp -o pp
 <br>
 
 Use the color_predictiveParser.cpp if your terminal supports [term256](https://github.com/gawin/bash-colors-256) colours.
+
+<br>
+
+[← Lab 4](../Lab4/README.md) · [All labs](../) · [Lab 6 →](../Lab6/README.md)

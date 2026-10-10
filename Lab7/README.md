@@ -1,3 +1,5 @@
+# Lab 7 · 3-D array declarations with LEX and YACC
+
 This lab involves implementing a 3-dimensional array
 
 <br>
@@ -12,3 +14,7 @@ cc y.tab.c lex.yy.c
 <br>
 
 Ignore the error messages, input the size of matrix in the command line when prompted.
+
+<br>
+
+[← Lab 6](../Lab6/README.md) · [All labs](../)

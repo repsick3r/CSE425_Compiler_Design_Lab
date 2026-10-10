@@ -1,3 +1,5 @@
+# Lab 4 · Recursive descent parser
+
 This lab involves implementing a recursive descent top down parser
 
 - Grammar
@@ -26,3 +28,7 @@ g++ recursiveDescent.cpp -o recDes
 <br>
 
 Use the color_recursiveDescent.cpp if your terminal supports [term256](https://github.com/gawin/bash-colors-256) colours.
+
+<br>
+
+[← Lab 3](../Lab3/README.md) · [All labs](../) · [Lab 5 →](../Lab5/README.md)

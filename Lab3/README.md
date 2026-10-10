@@ -1,3 +1,5 @@
+# Lab 3 · Lexical analysis with LEX
+
 This lab involves implementing lexical analysis using [LEX](http://dinosaur.compilertools.net/)
 
 Installation
@@ -27,3 +29,7 @@ g++ lex.yy.c -ll -o main
 <div align="center">
     <img src="output.png" width="800" height="300">
 </div>
+
+<br>
+
+[← Lab 2](../Lab2/README.md) · [All labs](../) · [Lab 4 →](../Lab4/README.md)

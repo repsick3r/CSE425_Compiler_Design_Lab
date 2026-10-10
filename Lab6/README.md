@@ -1,3 +1,5 @@
+# Lab 6 · Canonical LR parser
+
 This lab involves implementing a canonical LR parser
 
 - Grammar
@@ -26,3 +28,7 @@ g++ canonicalLRParser.cpp -o clp
 <br>
 
 Use the color_canonicalLRParser.cpp if your terminal supports [term256](https://github.com/gawin/bash-colors-256) colours.
+
+<br>
+
+[← Lab 5](../Lab5/README.md) · [All labs](../) · [Lab 7 →](../Lab7/README.md)
